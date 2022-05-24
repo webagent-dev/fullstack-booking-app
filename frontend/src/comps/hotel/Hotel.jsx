@@ -7,6 +7,7 @@ function Hotel({ data }) {
     const [getLocation, setGetLocation] =  useState(data.location)
     const [getRoom, setGetRoom] = useState(data.choose)
     const [openDate, setOpenDate ] = useState(false)
+    const [options, setOptions ] = useState(1)
   return (
       <div className='hotel__container'>
           <div className="hotel__wrapper">
@@ -30,7 +31,52 @@ function Hotel({ data }) {
                   </div>
                       <div className="table__list">
                       <label>Options</label>
-                      
+                      <div className="table__option__container">
+                          <span className='option__text'>
+                              Min price
+                              <small>per night</small>
+                          </span>
+                          <input />
+                      </div>
+                           <div className="table__option__container">
+                          <span className='option__text'>
+                              Max price
+                              <small>per night</small>
+                          </span>
+                          <input />
+                      </div>
+                           <div className="table__option__container">
+                          <span className='option__text'>
+                              Adult
+                          </span>
+                          <input
+                              type='number'
+                              min={1}
+                              className='table__input'
+                              placeholder={options.adult}
+                          />
+                      </div>
+                           <div className="table__option__container">
+                          <span className='option__text'>
+                              Children
+                          </span>
+                          <input
+                              type='number'
+                              min={0}
+                              className='table__input'
+                              placeholder={options.children}
+                          />
+                      </div>
+                           <div className="table__option__container">
+                          <span className='option__text'>
+                               Room
+                          </span>
+                          <input
+                              type='number'
+                              min={1}
+                              className='table__input'
+                              placeholder={options.room} />
+                      </div>
                   </div>
               </div>
               <div className="search__result"></div>
