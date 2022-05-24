@@ -1,0 +1,26 @@
+.feature__container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+}
+.feature__wrapper{
+        position: relative;
+        color: white;
+        /* height: 250px; */
+}
+.feature__image{
+    width: 100%;
+    object-fit: cover;
+}
+.feature__content{
+    position: absolute;
+    left: 20px;
+bottom: 20px;
+}
+.feature__header{
+
+}

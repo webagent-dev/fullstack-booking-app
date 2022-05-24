@@ -1,0 +1,17 @@
+{
+    "editor.tabSize": 1,
+    "editor.cursorStyle": "block",
+    "editor.accessibilityPageSize": 5,
+    "editor.accessibilitySupport": "off",
+    "editor.autoIndent": "advanced",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.columnSelection": false,
+    "editor.comments.ignoreEmptyLines": false,
+    "editor.comments.insertSpace": false,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.detectIndentation": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.fastScrollSensitivity": 1,
+    "editor.folding": false
+}

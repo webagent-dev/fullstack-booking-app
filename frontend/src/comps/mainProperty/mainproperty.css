@@ -1,0 +1,42 @@
+.mp__container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.mp__wrapper{
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.image__con{
+    width: 100%;
+}
+.mp__image{
+    width: 100%;
+}
+.mp__name{
+    font-weight: 700;
+}
+.mp__city{
+    font-weight: 300;
+}
+.mp__price{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.rating__container > .rating__btn{
+    background: blue;
+    color: white;
+    border: none;
+    padding: 3px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.rating__container > .rating__test{
+    font-size: 14px;
+    font-weight: 500;
+}

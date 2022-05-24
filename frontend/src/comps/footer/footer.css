@@ -1,0 +1,21 @@
+.footer__container{
+    width: 100%;
+    max-width: 1024px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+.footer__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.footer__list{
+    list-style: none;
+    padding: 0;
+}
+.list{
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: lightseagreen;
+}

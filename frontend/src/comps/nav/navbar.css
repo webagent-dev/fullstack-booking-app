@@ -1,0 +1,30 @@
+.navbar__container{
+    height: 50px;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+}
+.navbar__wrapper{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+.auth__btn{
+    margin-left: 20px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: lightskyblue;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: monospace;
+    border-radius: 3px;
+}
