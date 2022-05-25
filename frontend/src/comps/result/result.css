@@ -1,0 +1,116 @@
+.result__container{
+    width: 100%;
+    /* height: max-content; */
+    display: flex;
+    gap: 1rem;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 15px;
+}
+.result__pic{
+    flex: 1;
+    width: 300px;
+    /* height: 200px; */
+}
+.result__desc{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.desc__header{
+    font-size: 22px;
+    font-weight: 700;
+    color: lightseagreen;
+}
+.result__desc > p{
+    font-weight: 500;
+    width: max-content;
+    /* text-transform: capitalize; */
+}
+.desc__btn{
+    font-size: 15px;
+    padding: 5px;
+    width: max-content;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: lightskyblue;
+}
+.result__desc > h2{
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.result__other{
+    flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+.result__desc > h3{
+    font-weight: 500;
+    font-size: 18px;
+}
+sup{
+    font-size: 10px;
+}
+.desc__can{
+    color: lightskyblue;
+    font-weight: 700;
+}
+.desc__text{
+    color: lightskyblue;
+    font-weight: 500;
+}
+.other__result{
+    flex: 1;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+.other__wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.other__wrap > h1{
+    font-size: 15px;
+    font-weight: 700;
+}
+.other__other__container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.other__price{
+    align-self: end;
+    font-weight: 500;
+}
+.other__other__wrap > p{
+    font-size: 15px;
+}
+.wrap__btn{
+    background: lightskyblue;
+    padding: 8px 5px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+.other__other__btn{
+    width: 180px;
+    padding: 10px;
+    background: lightskyblue;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+.other__other__wrap > p{
+    align-self: end;
+}

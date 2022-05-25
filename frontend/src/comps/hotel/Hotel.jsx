@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { format } from 'date-fns'
 import { DateRange } from 'react-date-range'
+import { Result } from '../../files'
 import './hotel.css'
+const result = [1,2,3,4,5]
 function Hotel({ data }) {
     const [getDate, setGetDate] = useState(data.date)
     const [getLocation, setGetLocation] =  useState(data.location)
@@ -36,14 +38,14 @@ function Hotel({ data }) {
                               Min price
                               <small>per night</small>
                           </span>
-                          <input />
+                          <input    className='table__input' />
                       </div>
                            <div className="table__option__container">
                           <span className='option__text'>
                               Max price
                               <small>per night</small>
                           </span>
-                          <input />
+                          <input     className='table__input' />
                       </div>
                            <div className="table__option__container">
                           <span className='option__text'>
@@ -78,8 +80,12 @@ function Hotel({ data }) {
                               placeholder={options.room} />
                       </div>
                   </div>
+                  <button className='table__btn'>Search</button>
               </div>
-              <div className="search__result"></div>
+              <div className="search__result">
+                  {result.map((item) => <Result key={item} />)
+                  }
+              </div>
             </div>
       </div>
   )

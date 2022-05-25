@@ -7,8 +7,8 @@ import { default as MainProperty } from './comps/mainProperty/MainProperty'
 import { default as MailList } from './comps/mailList/MailList'
 import { default as Footer } from './comps/footer/Footer'
 import { default as Hotel } from './comps/hotel/Hotel'
+import { default as Result } from './comps/result/Result'
 
 
 
-
-export { Header, Navbar, Feature, Type, Property, MainProperty, MailList, Footer, Hotel }
+export { Header, Navbar, Feature, Type, Property, MainProperty, MailList, Footer, Hotel, Result }
