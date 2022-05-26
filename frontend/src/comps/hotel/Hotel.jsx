@@ -55,7 +55,7 @@ function Hotel({ data }) {
                               type='number'
                               min={1}
                               className='table__input'
-                              placeholder={options.adult}
+                              placeholder={1}
                           />
                       </div>
                            <div className="table__option__container">
@@ -66,7 +66,7 @@ function Hotel({ data }) {
                               type='number'
                               min={0}
                               className='table__input'
-                              placeholder={options.children}
+                              placeholder={0}
                           />
                       </div>
                            <div className="table__option__container">
@@ -77,7 +77,8 @@ function Hotel({ data }) {
                               type='number'
                               min={1}
                               className='table__input'
-                              placeholder={options.room} />
+                              placeholder={1} 
+                          />
                       </div>
                   </div>
                   <button className='table__btn'>Search</button>

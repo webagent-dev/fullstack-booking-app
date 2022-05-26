@@ -8,7 +8,9 @@ import { default as MailList } from './comps/mailList/MailList'
 import { default as Footer } from './comps/footer/Footer'
 import { default as Hotel } from './comps/hotel/Hotel'
 import { default as Result } from './comps/result/Result'
+import { default as SinglePage } from './comps/single/Single'
+import { default as SingleList } from './comps/single/single-list/List'
 
 
 
-export { Header, Navbar, Feature, Type, Property, MainProperty, MailList, Footer, Hotel, Result }
+export { Header, Navbar, Feature, Type, Property, MainProperty, MailList, Footer, Hotel, Result, SinglePage, SingleList }

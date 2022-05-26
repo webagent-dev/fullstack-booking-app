@@ -1,5 +1,6 @@
 import React from 'react'
 import './result.css'
+import { Link } from 'react-router-dom'
 function Result() {
   return (
       <div className='result__container'>
@@ -23,7 +24,9 @@ function Result() {
                   <div className="other__other__wrap">
                       <p>Include taxes and fees</p>
                       <button className="other__other__btn">
-            See availability
+                          <Link to='/hotel_detail'>
+                             See availability
+                        </Link>
                       </button>
                   </div>
               </div>
