@@ -64,8 +64,10 @@ function Header({ type }) {
           type !==  'list' &&
           <>
         <h1 className="header__title">A Lifetime of discounts? It's Genius.</h1>
-        <p className="header__desc">Get rewarded for your travels  unlock instant savings of 10% or more with a free Booker account</p>
-        <button className="header__btn">Sign in / Register</button>
+            <p className="header__desc">Get rewarded for your travels  unlock instant savings of 10% or more with a free Booker account</p>
+            <div className="header__btn__container">
+              <button className="header__btn">Sign in / Register</button>
+              </div>
         <div className="header__search">
           <div className="search__input">
             <FaLuggageCart color='lightgray' size='20px' />

@@ -28,3 +28,10 @@
     font-family: monospace;
     border-radius: 3px;
 }
+
+/* Nav bar media query  */
+@media(max-width: 785px){
+       .navbar__wrapper{
+    justify-content: space-around;
+}
+}
