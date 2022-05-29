@@ -90,6 +90,6 @@ padding: 20px 0px;
 .single__page__list{
         margin-top: 20px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: .5rem;
 }
