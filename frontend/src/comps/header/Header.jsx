@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './header.css'
+import './toggle.css'
 import { FaBath,FaPlane,FaCar,FaPeopleArrows,FaCalendarAlt,FaLuggageCart } from 'react-icons/fa'
 import { GiCommercialAirplane } from 'react-icons/gi'
 import { MdNaturePeople } from 'react-icons/md'
@@ -9,7 +10,8 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { useNavigate } from 'react-router-dom'
 import { format } from 'date-fns'
 function Header({ type }) {
-  const [location, setLocation ] = useState('')
+  const [location, setLocation] = useState('')
+  const [getSmallToggle, setGetSmallToggle] = useState(false)
   const [open, setOpen] = useState(false)
   const [option, setOption] = useState(false)
   const [choose, setChoose] = useState({
@@ -138,7 +140,17 @@ function Header({ type }) {
             </div>
             </>
         }
+        <div className='header__btn__container toggle'>
+          <button className=" header__btn get__small" onClick={() => setGetSmallToggle(true)}>Search Location</button>
+        </div>
+           {
+        getSmallToggle && (
+          <div className="small__toggle__container">
+            <h1>we are doing new thing here</h1>
           </div>
+        )
+      }
+      </div>
       </div>
   )
 }
