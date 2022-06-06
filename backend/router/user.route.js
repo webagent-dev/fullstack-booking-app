@@ -1,11 +1,13 @@
 const express = require('express')
 const Router = express.Router()
-const {  getUser, getSingleUser, updateUser, deleteUser } = require('../controller/user.controller')
+const {  getUser, getSingleUser, updateUser, deleteUser, getUserStat } = require('../controller/user.controller')
+const verify = require('../middleware/verify')
 
 
-Router.get('/user', getUser)
-Router.get('/user/:id', getSingleUser)
-Router.put('/user/:id', updateUser)
-Router.delete('/user/:id', deleteUser)
+Router.get('/user',verify, getUser)
+Router.get('/user_stat',verify, getUserStat)
+Router.get('/user/:id', verify, getSingleUser)
+Router.put('/user/:id', verify, updateUser)
+Router.delete('/user/:id',verify,  deleteUser)
 
 module.exports = Router
